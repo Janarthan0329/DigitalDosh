@@ -1,0 +1,55 @@
+/* src/pages/Pricing.css */
+
+.pricing-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    color: #3498db;
+  }
+  
+  .pricing-plan {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #f9f9f9;
+  }
+  
+  .pricing-plan h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-plan .price {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .pricing-plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-plan ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .plan-btn:hover {
+    background-color: #2980b9;
+  }
+  

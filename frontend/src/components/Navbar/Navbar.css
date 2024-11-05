@@ -1,0 +1,180 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    color: #ddd;
+    border-bottom: 1px solid #cccccc;
+}
+
+.navbar .logo {
+    width: max(10vw, 120px);
+    border-radius: 100px;
+    height: max(3vw, 40px);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    position: relative; 
+}
+
+.navbar li {
+    cursor: pointer;
+    position: relative; 
+}
+
+.feature-list {
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background: #09005c; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 10; 
+    display:list-item ; 
+    padding: 10px 0; 
+}
+
+.feature-list li {
+    padding: 4px 10px;
+    color: white; 
+    
+}
+
+.feature-list li:hover {
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: max(1vw, 12px);
+}
+
+/* Currency selector */
+.navbar select {
+    padding: 5px 8px;
+    border-radius: 6px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar option {
+    background-color: #09005c;
+    color: white;
+}
+
+/* General button styling */
+.navbar button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #393939;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Profile management area */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.user-profile img.profile-avatar {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; 
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Username next to the avatar */
+.user-profile span {
+    color: #ffffff; 
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Profile management button */
+.user-profile button {
+    background-color: #f50000; 
+    color: white;
+    padding: 8px 20px;
+    border-radius: 18px;
+    font-size: 14px;
+    border: #ddd;
+    cursor: pointer;
+}
+
+/* Smaller screens */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px 8%;
+    }
+
+    .navbar button {
+        gap: 8px;
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 5%;
+    }
+
+    .navbar ul {
+        display: none; /* Hide menu links for small screens */
+    }
+
+    .navbar button img {
+        width: 12px;
+    }
+
+    /* Adjustments for feature list in small screens */
+    .feature-list {
+        position: static; /* Reset position for small screens */
+        width: 100%; /* Full width for dropdown */
+    }
+
+    /* Show user profile section in smaller screens */
+    .nav-right {
+        flex-direction: column; /* Stack currency selector and profile */
+        align-items: flex-start;
+    }
+
+    /* Adjustments for currency selector on smaller screens */
+    .navbar select {
+        width: 100%; /* Full width for select */
+    }
+}
+
+/* Smaller screens adjustments for profile */
+@media (max-width: 768px) {
+    .user-profile {
+        gap: 10px;
+    }
+
+    .user-profile img.profile-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .user-profile button {
+        font-size: 13px;
+        padding: 6px 15px;
+    }
+}

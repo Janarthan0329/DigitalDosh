@@ -1,0 +1,112 @@
+.currency-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.converter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.amount-input {
+    padding: 10px;
+    width: 80px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+    max-width: 100%;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    max-width: 100%;
+}
+
+span {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #444;
+    text-align: center;
+}
+
+.result h3 {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Chart styling */
+.chart-container {
+    margin: 20px auto;
+    width: 90%;
+    /* Responsive width */
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 400px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .currency-converter {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .converter-container {
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .amount-input,
+    select {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .result {
+        font-size: 1em;
+    }
+
+    .result h3 {
+        font-size: 1.4em;
+    }
+}
